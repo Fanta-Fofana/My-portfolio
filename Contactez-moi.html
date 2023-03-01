@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-moi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Contactez-moi.css">
+</head>
+<body>
+    <header>
+        <p id="Portfolio">Port<span>folio</span></p>
+      <div >
+        <ul class="nav-links" >
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="Qui-suis-je.html">Qui suis-je?</a></li>
+        <li><a href="Mes-projets.html">Mes projets</a></li>
+        <li><a href="contactez-moi.html"><span>Contactez-moi</span></a></li>
+        </ul>
+        </div>
+        <img src="Mes-proojets/menu.png" alt="menu" class="bars">
+  </header>
+         <h1>Contactez-moi</h1>
+         <div class="bas">
+            <div class="bas-left" >
+                <div class="adres">
+                    <h3><i class="fa fa-address-book-o" aria-hidden="true"></i>
+                        Adresse</h3>
+                    <p>Bamako,Mali</p><br>
+                </div>
+                <div class="Email">
+                    <h3><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <a href="https://mail.google.com/mail/u/0/?tab=wm#inboxv">Email</a>
+                        </h3>
+                    <p>fantafofana919@gmail.com</p><br>
+                </div>
+                <div class="Telephone">
+                    <h3><i class="fa fa-phone" aria-hidden="true"></i>
+
+                        Téléphone</h3>
+                    <p>90539076</p>
+                </div>
+            </div>
+            <div class="bas-right">
+                <div class="formulaire">
+                    <form action="formu" class="formu" >
+                        <input type="text" placeholder="Nom et Prénom"><br>
+                        <input type="email" placeholder="Email"><br>
+                        <textarea name="message" id="text" cols="30" rows="10" Placeholder="Message"></textarea>
+                       <input type="submit" value="Envoyez"> 
+                    </form>
+                </div>
+                      
+                        
+            </div>
+    </div>
+    <script>
+        const bars = document.querySelector(".bars")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        bars.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+</script>
+</body>
+</html>

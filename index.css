@@ -1,0 +1,220 @@
+body
+{
+    
+  
+   font-family: "Roboto", sans-serif;
+   color: #ffff;
+   background-image:url(fond.jpg);
+   background-repeat: repeat-y;
+   background-position: center;
+   background-size: cover;
+   
+   }
+   header
+{
+  
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+ 
+  
+  align-items: center;
+  justify-content: space-between;
+  
+
+  background: transparent;
+  padding: 25px 15px ;
+  transition-duration: .3s;
+  
+}
+#Portfolio{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px ;
+    padding-left: 10%;
+   
+  }
+  .nav-links{
+     display: flex;
+  }
+  .nav-links li{
+    position: relative;
+    list-style-type: none;
+  }
+  .nav-links a{
+    text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+    .nav-links a::after{
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: #ffff;
+      left: 0;
+      bottom: -4px;
+      transition: ease .40s;
+    }
+    .nav-links a:hover::after{
+      width: 100%;
+    }
+    
+.contenu{
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+header .bars{
+    width: 35px;
+    height: 35px;
+    display: none;
+   
+}
+.contenu .left a{
+    text-decoration: none;
+    background-color: brown;
+    border-radius: 15px 15px;
+    color: white;
+    font-size: 25px;
+}
+.left{
+   padding-left: 10%;
+   padding-top: 10%;
+   
+}
+.right img{
+    width: 300px;
+    height: 330px;
+    border-radius: 50%;
+    margin-left: 8%;
+    margin-top: 6%;
+}
+@media screen and (max-width: 847px){
+    .contenu{
+        display: flex;
+        flex-wrap: wrap;
+    }
+     .contenu .right img{
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+    .contenu .left{
+        padding-left: 15px;
+    }
+    
+}
+@media screen and (max-width:750px)
+{
+ header{
+  padding: 0;
+  
+ }
+ header .bars{
+  display: block;
+ }
+ .nav-links{
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(78, 78, 190, 0.212);
+  backdrop-filter: blur(7px);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -1000%;
+  transition: all 0.5s ease;
+ }
+ .mobile-menu{
+  margin-left: 0;
+ }
+ header ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ header .nav-links li{
+  margin: 25px 0;
+  font-size: 1.2em;
+ }
+ header .bars{
+  position: absolute;
+  top: 46px;
+  left: 65%;
+ }
+ header #Portfolio{
+  padding-left: 35px;
+  padding-top: 18px;
+ }
+ 
+}
+@media screen and (max-width: 500px)
+{
+    header{
+        background-color: aqua;
+    }
+    img{
+        width: 300px;
+        height: 300px;
+        
+    }
+    h1{
+        font-size: 25px;
+    }
+    .bas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .button{
+        width: 50%;
+        height: 50%;
+        font-size: 20px;
+        margin-left: 10%;
+    }
+    .bas-left h1
+    {
+        font-size: 30px;
+    }
+    .bars{
+        margin-left: -20%;
+    }
+    
+   }
+   @media screen and (width: 375px)
+   {
+       header{
+           background-color: aqua;
+       }
+       img{
+           width: 300px;
+           height: 300px;
+           
+       }
+       h1{
+           font-size: 25px;
+       }
+       .bas{
+           display: flex;
+           flex-wrap: wrap;
+       }
+       .button{
+           width: 50%;
+           height: 50%;
+           font-size: 20px;
+           margin-left: 10%;
+       }
+       .bas-left h1
+       {
+           font-size: 30px;
+       }
+       .bars{
+           margin-left: -20%;
+       }
+       
+      }

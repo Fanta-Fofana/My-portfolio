@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui-suis-je</title>
+    <link rel="stylesheet" href="Qui-suis-je.css">
+</head>
+<body>
+  
+        <header>
+            <p id="Portfolio">Port<span>folio</span></p>
+        <div >
+            <ul class="nav-links" >
+             <li><a href="index.html">Accueil</a></li>
+             <li><a href="Qui-suis-je.html"> <span>Qui suis-je?</span></a></li>
+             <li><a href="Mes-projets.html">Mes projets</a></li>
+             <li><a href="contactez-moi.html">Contactez-moi</a></li>
+            </ul>
+         </div>
+         <img src="Mes-proojets/menu.png" alt="menu" class="bars">
+        </header> 
+        <h1>Qui suis-je?</h1>
+        <div class="bas">
+         <div class="bas-gauche">
+                <p class="p2">Etudiante à l’école Superieure de Commerce et de Technologie.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, ad. Delectus fuga officiis ab aspsint beatae eos consequuntur ullam. fugit cum vel excepturi voluptas unde eligendi quisquam, voluptatem sint beatae eos consequuntur ullam.</p>
+            </div>
+            <div class="bas-droite">
+                <img src="img.jpg" alt="">
+            </div>
+        </div>
+   
+        <script>
+            const bars = document.querySelector(".bars")
+            const navLinks = document.querySelector(".nav-links")
+     
+            bars.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+            })
+    </script>  
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p id="Portfolio">Port<span>folio</span></p>
+    <div >
+        <ul class="nav-links" >
+         <li><a href="index.html"><span>Accueil</span></a></li>
+         <li><a href="Qui-suis-je.html">Qui suis-je?</a></li>
+         <li><a href="Mes-projets.html">Mes projets</a></li>
+         <li><a href="contactez-moi.html">Contactez-moi</a></li>
+        </ul>
+     </div>
+     <img src="Mes-proojets/menu.png" alt="menu" class="bars">
+    </header>
+    <div class="contenu">
+        <div class="left">
+            <h1><span>Bonjour</span> et bienvenue ! <br></h1>
+            <h1 id="js">Je suis <br>
+                    FANTA FOFANA</h1>
+            <p id="P">J'ai pour objectif de développer le site de vos rêves...</p><br>
+            <a href="Fanta-Fof.pdf" class="button">Télécharger mon CV</a>
+        </div>
+        <div class="right">
+            <img src="img.jpg" alt="">
+
+        </div>
+    </div>
+
+    <script>
+        const bars = document.querySelector(".bars")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        bars.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+</script>
+    
+</body>
+</html>
